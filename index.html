@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dev Kumar Srivastav | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">DKS<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Journey</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-badge">// AVAILABLE FOR OPPORTUNITIES</div>
+  <h1 class="hero-name">DEV <span class="highlight">KUMAR</span><br>SRIVASTAV</h1>
+  <div class="hero-roles">
+    <span class="role-tag">Java Developer</span>
+    <span class="role-tag">.NET Developer</span>
+    <span class="role-tag">QA Tester</span>
+    <span class="role-tag">Android Dev</span>
+  </div>
+  <p style="color:rgba(200,232,255,0.55); font-size:1rem; letter-spacing:1px; max-width:500px; animation: fadeSlideUp 0.8s 0.35s ease both;">
+    B.Tech CSE @ RKGIT Ghaziabad &nbsp;|&nbsp; Full-Stack Enthusiast &nbsp;|&nbsp; Problem Solver
+  </p>
+  <div class="hero-btns">
+    <a href="#projects" class="btn-primary">VIEW PROJECTS</a>
+    <a href="#contact" class="btn-accent">HIRE ME</a>
+  </div>
+  <div class="scroll-indicator">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<div class="glow-divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-label">01 / About</span>
+    <h2 class="section-title">WHO AM I</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-visual reveal">
+      <div class="avatar-frame">
+        <div class="avatar-hexagon">
+          <div class="avatar-inner">DK</div>
+        </div>
+        <div class="avatar-ring"></div>
+        <div class="floating-stat s1">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">LANGUAGES</span>
+        </div>
+        <div class="floating-stat s2">
+          <span class="stat-num">2026</span>
+          <span class="stat-label">GRADUATING</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-content reveal">
+      <h3>Full-Stack Developer & QA Engineer</h3>
+      <p>A young and motivated Computer Science engineer with a passion for building scalable software. I bring multi-domain expertise spanning Java/Spring Boot backend, .NET web applications, and quality assurance — making me a versatile asset to any team.</p>
+      <p>Currently pursuing B.Tech at RKGIT Ghaziabad, I believe in learning by building and delivering real impact through technology.</p>
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="info-key">NAME</span>
+          <span class="info-val">Dev Kumar Srivastav</span>
+        </div>
+        <div class="info-item">
+          <span class="info-key">PHONE</span>
+          <span class="info-val">9451237986</span>
+        </div>
+        <div class="info-item">
+          <span class="info-key">EMAIL</span>
+          <span class="info-val">dev4536c@gmail.com</span>
+        </div>
+        <div class="info-item">
+          <span class="info-key">LOCATION</span>
+          <span class="info-val">Ghaziabad, UP</span>
+        </div>
+        <div class="info-item">
+          <span class="info-key">DEGREE</span>
+          <span class="info-val">B.Tech CSE (2026)</span>
+        </div>
+        <div class="info-item">
+          <span class="info-key">STATUS</span>
+          <span class="info-val" style="color:var(--cyan)">● Open to Work</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-header reveal">
+    <span class="section-label">02 / Skills</span>
+    <h2 class="section-title">TECH ARSENAL</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-container reveal">
+    <div class="skills-tabs">
+      <button class="tab-btn active" onclick="switchTab('java')">JAVA / BACKEND</button>
+      <button class="tab-btn" onclick="switchTab('dotnet')">.NET / WEB</button>
+      <button class="tab-btn" onclick="switchTab('qa')">QA / TESTING</button>
+      <button class="tab-btn" onclick="switchTab('tools')">TOOLS</button>
+    </div>
+    <div id="tab-java" class="tab-panel active">
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-icon">☕</div><div class="skill-name">Core Java</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:88%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🌱</div><div class="skill-name">Spring Boot</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:75%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🔗</div><div class="skill-name">Hibernate / JPA</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:70%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">⚡</div><div class="skill-name">Microservices</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:60%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">📱</div><div class="skill-name">Android Dev</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:72%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🗄️</div><div class="skill-name">MySQL</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:80%"></div></div></div>
+      </div>
+    </div>
+    <div id="tab-dotnet" class="tab-panel">
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-icon">🔷</div><div class="skill-name">C#</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:75%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🌐</div><div class="skill-name">ASP.NET / MVC</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:72%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">⚙️</div><div class="skill-name">.NET Core</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:68%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🎨</div><div class="skill-name">Bootstrap / Tailwind</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:78%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🗃️</div><div class="skill-name">SQL Server</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:73%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🔌</div><div class="skill-name">REST APIs</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:70%"></div></div></div>
+      </div>
+    </div>
+    <div id="tab-qa" class="tab-panel">
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-icon">🧪</div><div class="skill-name">Manual Testing</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:82%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🔄</div><div class="skill-name">Functional Testing</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:80%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">♻️</div><div class="skill-name">Regression Testing</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:75%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🤖</div><div class="skill-name">Selenium (Basic)</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:50%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">📋</div><div class="skill-name">SDLC & STLC</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:78%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🐛</div><div class="skill-name">JIRA</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:68%"></div></div></div>
+      </div>
+    </div>
+    <div id="tab-tools" class="tab-panel">
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-icon">💻</div><div class="skill-name">VS / VS Code</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:85%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🐙</div><div class="skill-name">Git & GitHub</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:78%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">📮</div><div class="skill-name">Postman</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:70%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🔥</div><div class="skill-name">Firebase</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:65%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🌍</div><div class="skill-name">HTML / CSS / JS</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:75%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">📊</div><div class="skill-name">MS Office</div><div class="skill-bar-bg"><div class="skill-bar" style="--fill:85%"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-label">03 / Projects</span>
+    <h2 class="section-title">WHAT I BUILT</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <span class="project-num">01</span>
+      <span class="project-type">// FINAL YEAR PROJECT · 2025–2026</span>
+      <h3 class="project-title">Automated Attendance System for Rural Schools</h3>
+      <p class="project-desc">A smart digital attendance solution designed to replace error-prone paper-based systems in rural schools. Delivers real-time insights to stakeholders, reduces absenteeism tracking effort, and streamlines administrative processes.</p>
+      <div class="project-tags">
+        <span class="project-tag">Java</span>
+        <span class="project-tag">MySQL</span>
+        <span class="project-tag">Spring Boot</span>
+        <span class="project-tag">Real-time</span>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <span class="project-num">02</span>
+      <span class="project-type">// MINI PROJECT</span>
+      <h3 class="project-title">University Management System</h3>
+      <p class="project-desc">A comprehensive college administration platform covering student registration, fee management, attendance tracking, exam records, and performance analytics — replacing manual workflows with automated, digital processes.</p>
+      <div class="project-tags">
+        <span class="project-tag">Java</span>
+        <span class="project-tag">MySQL</span>
+        <span class="project-tag">OOPs</span>
+        <span class="project-tag">CRUD</span>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <span class="project-num">03</span>
+      <span class="project-type">// INTERNSHIP · DION GLOBAL SOLUTIONS</span>
+      <h3 class="project-title">Android Application Development</h3>
+      <p class="project-desc">74-day hands-on internship at DION Global Solutions, Noida focused on Android application development. Gained practical experience in building production-level mobile applications on the Android platform.</p>
+      <div class="project-tags">
+        <span class="project-tag">Android</span>
+        <span class="project-tag">Java</span>
+        <span class="project-tag">Firebase</span>
+        <span class="project-tag">Mobile UI</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-divider"></div>
+
+<!-- JOURNEY / CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-header reveal">
+    <span class="section-label">04 / Journey</span>
+    <h2 class="section-title">MY TIMELINE</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot">EDU</div>
+      <div class="timeline-content">
+        <div class="timeline-year">2023 – 2026</div>
+        <div class="timeline-title">B.Tech – Computer Science & Engineering</div>
+        <div class="timeline-org">Raj Kumar Goel Institute of Technology, Ghaziabad</div>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot">INT</div>
+      <div class="timeline-content">
+        <div class="timeline-year">74 DAYS · NOIDA</div>
+        <div class="timeline-title">Android Development Internship</div>
+        <div class="timeline-org">DION Global Solutions, Noida — Practical mobile app development experience</div>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot">CRT</div>
+      <div class="timeline-content">
+        <div class="timeline-year">2022</div>
+        <div class="timeline-title">Core Java Certification</div>
+        <div class="timeline-org">Balaji Academy — Certified proficiency in Core Java programming</div>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot">EDU</div>
+      <div class="timeline-content">
+        <div class="timeline-year">2020 – 2023</div>
+        <div class="timeline-title">Diploma in Mechanical Engineering</div>
+        <div class="timeline-org">Buddha Institute of Technology, GIDA Gorakhpur</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header reveal">
+    <span class="section-label">05 / Contact</span>
+    <h2 class="section-title">GET IN TOUCH</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="contact-wrapper reveal">
+    <p class="contact-tagline">I'm actively seeking entry-level opportunities in software development or QA. Whether you have a role that fits or just want to connect — my inbox is open.</p>
+    <div class="contact-links">
+      <a href="mailto:dev4536c@gmail.com" class="contact-link">
+        <span class="contact-icon">✉️</span>
+        dev4536c@gmail.com
+      </a>
+      <a href="tel:9451237986" class="contact-link">
+        <span class="contact-icon">📞</span>
+        +91 9451237986
+      </a>
+      <a href="https://github.com/devsrivastav" target="_blank" class="contact-link">
+        <span class="contact-icon">🐙</span>
+        github.com/devsrivastav
+      </a>
+      <a href="https://www.linkedin.com/in/dev-kumar-srivastav" target="_blank" class="contact-link">
+        <span class="contact-icon">💼</span>
+        LinkedIn Profile
+      </a>
+    </div>
+    <div class="footer-line">
+      © 2025 DEV KUMAR SRIVASTAV &nbsp;·&nbsp; CRAFTED WITH ❤️ &nbsp;·&nbsp; GHAZIABAD, UP
+    </div>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
